@@ -1,0 +1,39 @@
+MUSIC SYMBOL CLASSIFICATION REPORT
+================================================================================
+Generated: 2025-08-01 15:49:36
+================================================================================
+
+Total Symbols Detected: 20
+Notes Detected: 13
+Pitches Determined: 13/13
+
+PITCH DISTRIBUTION:
+C4: 1
+D4: 5
+E4: 5
+G4: 2
+
+DETECTED SYMBOLS:
+--------------------------------------------------------------------------------
+ID   Class               Pitch     Position       ConfidenceSize      
+--------------------------------------------------------------------------------
+0    Barline             N/A       (132,268)      0.973x67      
+1    G-Clef              N/A       (145,247)      0.6440x110    
+2    4-4-Time            N/A       (202,269)      0.3227x63     
+3    Quarter-Note        E4        (260,277)      0.9720x62     
+4    Quarter-Note        D4        (320,286)      0.9720x61     
+5    Quarter-Note        C4        (375,292)      0.9231x63     
+6    Quarter-Note        D4        (440,286)      0.9621x61     
+7    Barline             N/A       (500,270)      0.984x65      
+8    Quarter-Note        E4        (522,277)      0.9621x62     
+9    Quarter-Note        E4        (584,277)      0.9720x62     
+10   Half-Note           E4        (646,277)      0.4820x62     
+11   Barline             N/A       (750,270)      0.984x64      
+12   Quarter-Note        D4        (772,286)      0.9621x61     
+13   Quarter-Note        D4        (834,286)      0.9720x61     
+14   Half-Note           D4        (896,286)      0.5420x61     
+15   Barline             N/A       (1000,270)     0.984x65      
+16   Quarter-Note        E4        (1022,277)     0.9621x62     
+17   Quarter-Note        G4        (1084,261)     0.9720x63     
+18   Half-Note           G4        (1145,262)     0.5021x62     
+19   Barline             N/A       (1250,270)     0.984x66      

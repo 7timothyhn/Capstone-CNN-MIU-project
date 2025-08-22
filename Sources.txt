@@ -1,0 +1,15 @@
+Mary had a little lamb with no lyrics:
+   - https://musescore.com/user/6168156/scores/3472726
+
+Classification model for note type:
+   - https://github.com/apacha/MusicSymbolClassifier.git
+
+Anaconda
+   - https://www.anaconda.com/download
+
+Youtube guide
+   - https://www.youtube.com/watch?v=ljFwYKL6-1U
+
+VLC
+   - https://apps.microsoft.com/detail/xpdm1zw6815mqm?launch=true&mode=full&hl=en-us&gl=jm&ocid=bingwebsearch
+

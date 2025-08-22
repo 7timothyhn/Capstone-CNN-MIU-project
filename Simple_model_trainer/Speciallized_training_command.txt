@@ -1,0 +1,11 @@
+Speciallized_training_command
+
+(music_omr_gpu) PS C:\Users\Timothy\OneDrive\Documents\CPtest\Chapter_4_Exe> python TrainModel.py `
+>>     --dataset_directory data `
+>>     --model_name vgg4 `
+>>     --width 96 `
+>>     --height 192 `
+>>     --minibatch_size 32 `
+>>     --optimizer Adadelta `
+>>     --use_fixed_canvas `
+>>     --use_existing_dataset_directory
