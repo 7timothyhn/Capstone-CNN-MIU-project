@@ -11,8 +11,9 @@ from pathlib import Path
 from mido import Message, MidiFile, MidiTrack
 
 # Configuration
-SFZ_PATH = r"C:\Users\Timothy\OneDrive\Documents\CPtest\Chapter_4_Exe\NoctSalamanderGrandPianoV4.1_48khz24bit\Noct-SalamanderGrandPiano_flat_withoutNoise.sfz"
-SFIZZ_RENDER = r"C:\Users\Timothy\OneDrive\Documents\CPtest\Chapter_4_Exe\tools\sfizz\bin\Release\sfizz_render.exe"
+SFZ_PATH = r"C:\Users\Timothy\OneDrive\Documents\CPtest\Restricted_Exe\NoctSalamanderGrandPianoV4.1_48khz24bit\Noct-SalamanderGrandPiano_flat_withoutNoise.sfz"
+
+SFIZZ_RENDER = r"C:\Users\Timothy\OneDrive\Documents\CPtest\Restricted_Exe\tools\sfizz\bin\Release\sfizz_render.exe"
 
 DURATION_MAP = {"whole": 1920, "half": 960, "quarter": 480, "eighth": 240}
 

@@ -1,0 +1,36 @@
+sequenceDiagram
+    participant User
+    participant music_pipeline.py
+    participant note_scanner.py
+    participant TrainedModel(.h5)
+    participant midi_creation.py
+    participant FileSystem
+
+    %% --- Script start ---
+    User->>music_pipeline.py: Run with --sheet image.png --classifier model.h5 --output-wav
+    music_pipeline.py->>note_scanner.py: create_output_structure()
+    note_scanner.py->>FileSystem: Create folders: staff_lines/, symbol_results/, Observations/
+
+    %% --- Model load ---
+    note_scanner.py->>FileSystem: Read model.h5
+    note_scanner.py->>TrainedModel(.h5): Load weights & architecture into memory
+
+    %% --- Image processing ---
+    note_scanner.py->>note_scanner.py: detect_staff_lines()
+    note_scanner.py->>note_scanner.py: remove_staff_lines()
+    note_scanner.py->>note_scanner.py: segment_symbols()
+
+    %% --- Classification ---
+    note_scanner.py->>TrainedModel(.h5): Predict class for each symbol
+    note_scanner.py->>FileSystem: Save symbol crops & metadata
+    note_scanner.py->>FileSystem: Write classification_report.txt
+
+    %% --- MIDI creation ---
+    music_pipeline.py->>midi_creation.py: parse_report(report_path)
+    midi_creation.py->>midi_creation.py: pitch_to_midi()
+    midi_creation.py->>midi_creation.py: create_midi_messages()
+    midi_creation.py->>FileSystem: Save temp.mid
+
+    %% --- Audio rendering ---
+    midi_creation.py->>FileSystem: Render output.wav via sfizz_render
+    midi_creation.py->>User: Return output.wav path
